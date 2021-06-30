@@ -1,6 +1,6 @@
 # Angular code challenge
 
-Refactoring of business logic: [product-service.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.ts)
+Refactoring of business logic: [product-service.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.ts). The idea is that all product-related business logic is in the "service" layer.
 
 Test: [product-service.spec.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.spec.ts)
 
