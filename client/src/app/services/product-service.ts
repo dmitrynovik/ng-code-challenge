@@ -69,14 +69,14 @@ export class ProductService {
 
         const products = updated.map(o => {
             const id = parseInt(o['id']);
-            const rule = this.getProductRule(id);
+            const rule = this.getProductRule(id) || new ProductRule();
             return {                 
                 id: id, 
                 temperature: o['temperature'],
-                minimumTemperature: rule?.minimumTemperature,
-                maximumTemperature: rule?.maximumTemperature,
-                name: rule?.name
-            } as Product
+                minimumTemperature: rule.minimumTemperature,
+                maximumTemperature: rule.maximumTemperature,
+                name: rule.name
+            };
         });
 
         this.products$.next(products);
