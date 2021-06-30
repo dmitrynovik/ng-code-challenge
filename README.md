@@ -1,8 +1,8 @@
 # Angular code challenge
 
-Refactoring of business logic: (https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.ts)[product-service.ts]
+Refactoring of business logic: [product-service.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.ts)
 
-Test: (https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.spec.ts)[product-service.spec.ts]
+Test: [product-service.spec.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.spec.ts)
 
 ## Available scripts
 
