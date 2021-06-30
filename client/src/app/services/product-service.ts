@@ -8,6 +8,8 @@ import { ProductStatus } from "../models/product-status";
 @Injectable({ providedIn: 'root'})
 export class ProductService {
 
+    readonly SERVICE_URL = 'http://localhost:8081/temperature/';
+
     public products$ = new Subject<Product[]>();
 
     private readonly rules = new Map<number, ProductRule>();
@@ -59,7 +61,7 @@ export class ProductService {
         const updateRequests = this.getProductRules()
             .map(product => 
                 this.httpClient
-                    .get(`http://localhost:8081/temperature/${product.id}`)
+                    .get(`${this.SERVICE_URL}${product.id}`)
                     .toPromise()
         );
 
