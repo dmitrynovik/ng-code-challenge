@@ -1,6 +1,7 @@
 # Angular code challenge
 
 Refactoring of business logic: `/client/src/app/services/product-service.ts`
+
 Test: `/client/src/app/services/product-service.spec.ts`
 
 ## Available scripts
