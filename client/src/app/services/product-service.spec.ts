@@ -35,7 +35,7 @@ describe('ProductService', () => {
         expect(productService).toBeTruthy();
     });
 
-    [4, 5, 6].forEach(t => {
+    [4, 4.001, 5, 5.999, 6].forEach(t => {
         it(`Temperature ${t} degrees is all good for Pilsner`, () => {
             expect(productService.getStatusFor(makePilsner(t))).toBe('all good');
         });
