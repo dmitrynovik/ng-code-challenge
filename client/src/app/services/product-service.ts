@@ -30,6 +30,8 @@ export class ProductService {
         setInterval(() => this.updateProducts(), 5000);
     }
 
+    clearRules = () => this.rules.clear();
+
     addRuleFor = (rule: ProductRule) => this.rules.set(rule.id, rule);
 
     getProductRules = () => [...this.rules.values()];
