@@ -1,4 +1,4 @@
-# Pragmateam code challenge
+# Angular code challenge
 
 Please refer to the provided document for the code challenge requirements.
 

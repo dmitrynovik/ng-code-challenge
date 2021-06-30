@@ -9,13 +9,10 @@
     </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of data | keyvalue">
-        <td width="150">{{ $any(item.value).name }}</td>
-        <td width="150">{{ $any(item.value).temperature }}</td>
-        <td width="150">
-          <span *ngIf="$any(item.value).temperature < $any(item.value).minimumTemperature">too low</span>
-          <span *ngIf="$any(item.value).temperature > $any(item.value).maximumTemperature">too high</span>
-          <span *ngIf="$any(item.value).temperature <= $any(item.value).maximumTemperature && $any(item.value).temperature >= $any(item.value).minimumTemperature">all good</span>
+      <tr *ngFor="let product of productService.products$ | async">
+        <td width="150">{{ product.name }}</td>
+        <td width="150">{{ $any(product).temperature }}</td>
+        <td width="150">{{ productService.getStatusFor(product) }}
         </td>
       </tr>
     </tbody>
