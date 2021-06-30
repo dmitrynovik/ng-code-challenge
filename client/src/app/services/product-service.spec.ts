@@ -5,6 +5,14 @@ import { Product } from '../models/product';
 import { ProductService } from './product-service';
 
 describe('ProductService', () => {
+    //
+    // We do not need to test each rule
+    // It is sufficient to do the following
+    // 1) add 1 rule
+    // 2) create a number of test cases for "too low", "all good" and "too high"
+    // 3) assert each case.
+    //
+
     let http: HttpClient;
     let productService: ProductService;
 
