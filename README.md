@@ -1,8 +1,18 @@
-# Angular code challenge
+## Highlights of the work done
 
-Refactoring of business logic: [product-service.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.ts). The idea is that all product-related business logic is in the "service" layer.
+1. Refactoring of business logic out of app component into a service class: [product-service.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.ts).
 
-Test: [product-service.spec.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.spec.ts)
+2. A test of the above service: [product-service.spec.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.spec.ts)
+
+## TODO or "what you would improve"
+- Add tests for the server side: `get('/temperature/:id'` - ran out of time
+
+## Questions
+Not so much.
+NOTE: getting information by each beer ID could be a performance issue if types become many (think of a bulk API).
+
+## Explanations of decisions made
+The idea is that all product-related business logic is in the "service" layer. Therefore, the app component does not have the logic and merely wraps the service.
 
 ## Available scripts
 
