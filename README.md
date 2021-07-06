@@ -5,7 +5,7 @@
 2. A test of the above service: [product-service.spec.ts](https://github.com/dmitrynovik/ng-code-challenge/blob/master/client/src/app/services/product-service.spec.ts)
 
 ## TODO or "what you would improve"
-- Add tests for the server side: `get('/temperature/:id'` - ran out of time
+Add a test for the server side: `get('/temperature/:id'` - ran out of time
 
 ## Questions
 Not so much.
