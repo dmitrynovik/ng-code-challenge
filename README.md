@@ -13,7 +13,7 @@ Not so much.
 NOTE: getting information by each beer ID could be a performance issue if types become many (think of a bulk API).
 
 ## Explanations of decisions made
-The idea is that all product-related business logic is in the "service" layer. 
+The idea is that all product-related business logic is in the "service" layer of the client. 
 Therefore, the app component does not have the logic and merely wraps the service. 
 The service layer contains necessary unit tests.
 
